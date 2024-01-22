@@ -62,7 +62,7 @@ for index, e_d in earnings_date_final.iterrows():
         # The Christmas holidays for 2010-12-02 -> 2011-01-27 has one trading day etc.
         # TODO: determine whether to recalculate the trading_start and trading_end dates based on the results
         #       or find a more reliable method of calculating -30< Earnings dates < +7
-        print(df_transposed)
+        print(df_transposed) 
     range_end = -30 + num_cols
     df_transposed.columns = ['{}'.format(i) for i in range(-30,range_end)]
     frames.append(df_transposed)
